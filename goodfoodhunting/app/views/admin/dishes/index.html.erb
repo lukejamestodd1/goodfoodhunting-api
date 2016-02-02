@@ -1,0 +1,12 @@
+<h2>dishes</h2>
+
+<%= link_to 'new dish', new_admin_dish_path %>
+
+<% @dishes.each do |dish| %>
+
+  <div class="row">
+    <%= link_to dish.name, admin_dish_path(dish) %>  
+    <%= link_to 'edit', edit_admin_dish_path(dish) %>
+  </div>
+
+<% end %>

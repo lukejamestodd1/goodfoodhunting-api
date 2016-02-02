@@ -1,0 +1,16 @@
+.ui-card{
+	float: left;
+	width: 50%;
+}
+
+/*float ok to have multiple going down */
+
+.left-align {
+	text-align: left;
+}
+.right-align {
+	text-align: right;
+}
+.img-circle {
+    border-radius: 50%;
+}

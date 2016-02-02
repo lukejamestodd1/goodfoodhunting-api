@@ -1,0 +1,15 @@
+<h2>Users</h2>
+
+<%= link_to 'new user', '/admin/users/new' %>
+
+<% @users.each do |user| %>
+
+  <div class="row">
+    <a href="/admin/users/<%= user.id %>">
+      <%= user.email %>
+    </a>
+     
+    <%= link_to 'edit', edit_admin_user_path(user) %>
+  </div>
+
+<% end %>
